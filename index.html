@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car Parking Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Car Parking Management System</h1>
+
+<div class="container">
+
+<input type="text" id="carNo" placeholder="Enter Car Number"
+pattern="[A-Za-z0-9-]+" title="Enter valid car number">
+
+<div class="buttons">
+<button onclick="carEntry()">Car Entry</button>
+<button onclick="carExit()">Car Exit</button>
+<button onclick="showStatus()">Parking Status</button>
+<button onclick="displayCars()">Display Cars</button>
+</div>
+
+<!-- Parking Grid -->
+<div id="parkingLot" class="parking-lot"></div>
+
+<h3 id="output"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
